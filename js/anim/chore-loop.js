@@ -118,7 +118,7 @@
           const st = DK.step(t, 8);
           if (st <= 0) return;
           ctx.globalAlpha = st;
-          const y = 368;
+          const y = 356;
           ctx.fillStyle = PAL.parchment;
           DK.rr(ctx, 22, y, 300, 46, 16);
           ctx.fill();
@@ -138,7 +138,7 @@
           const { PAL, DK } = S;
           const st = DK.step(t, 10);
           if (st <= 0) return;
-          const cx = S.W / 2, cy = S.H - 26, r = 17;
+          const cx = S.W / 2, cy = S.H - 22, r = 17;
           ctx.strokeStyle = PAL.primary;
           ctx.lineWidth = 3;
           ctx.beginPath();
