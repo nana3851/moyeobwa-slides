@@ -191,6 +191,10 @@ table.tbl td:first-child { font-weight: 600; white-space: nowrap; }
 }
 #s2 .grid3 { grid-template-rows: 1fr 1fr; }
 #s2 .grid3 .card:first-child { grid-row: 1 / 3; }
+#s2 .team-tbl { width: 100%; border-collapse: collapse; margin-top: 18px; }
+#s2 .team-tbl th, #s2 .team-tbl td { font-size: 22px; padding: 14px 12px; text-align: left; border-bottom: 1px solid var(--hairline); line-height: 1.35; }
+#s2 .team-tbl th { color: var(--ink-muted); font-weight: 600; font-size: 19px; }
+#s2 .team-tbl td:first-child { font-weight: 600; white-space: nowrap; }
 #s2 .card { display: flex; flex-direction: column; }
 #s2 .card h3 { color: var(--primary); font-size: 25px; margin-bottom: 18px; }
 #s2 ul { list-style: none; }
@@ -208,6 +212,8 @@ table.tbl td:first-child { font-weight: 600; white-space: nowrap; }
 }
 #s3 .quote .who { display: block; margin-top: 16px; font-size: 21px; font-weight: 400; color: var(--ink-muted); }
 #s3 img.shot { width: 300px; border-radius: 18px; border: 1px solid var(--hairline); align-self: center; }
+#s3 .proofs { display: flex; gap: 16px; justify-content: center; align-items: flex-start; }
+#s3 .proofs img { width: 250px; border-radius: 14px; border: 1px solid var(--hairline); }
 #s3 .punch { font-size: 30px; font-weight: 600; line-height: 1.5; }
 #s3 .punch .accent { color: var(--primary); }
 
@@ -225,12 +231,9 @@ table.tbl td:first-child { font-weight: 600; white-space: nowrap; }
 #s4 .band { font-size: 26px; padding: 15px 30px; margin-bottom: 18px; text-align: center; font-weight: 600; }
 #s4 .lower { display: flex; gap: 40px; flex: 1; min-height: 0; align-items: stretch; }
 #s4 canvas { width: 700px; height: 450px; flex: none; }
-#s4 .side { flex: 1; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-#s4 .chart-card h4 { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
-#s4 .chart-card svg { width: 640px; max-width: 100%; height: auto; display: block; }
-#s4 .alts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-#s4 .alts .alt { font-size: 20px; line-height: 1.35; padding: 11px 16px; border: 1px solid var(--hairline); border-radius: 14px; background: var(--canvas); }
-#s4 .alts .alt b { color: var(--primary); font-weight: 600; }
+#s4 .side { flex: 1; display: flex; flex-direction: column; gap: 14px; min-width: 0; justify-content: center; }
+#s4 .chart-card h4 { font-size: 24px; font-weight: 600; margin-bottom: 14px; }
+#s4 .chart-card svg { width: 760px; max-width: 100%; height: auto; display: block; }
 
 /* S5 창업 아이템 (dark) */
 #s5 h1.title { margin-bottom: 30px; }
