@@ -190,7 +190,7 @@
     const runner = runners.get(el);
     if (runner) {
       runner.reset();
-      if (FIN) runner.finish();
+      if (FIN || el.dataset.animStatic !== undefined) runner.finish();
       else setTimeout(() => runner.start(), 380);
     }
     if (!viaHash) history.replaceState(null, "", "#" + el.id);
@@ -218,7 +218,10 @@
       case "End": goto(slides.length - 1); break;
       case "r": case "R": {
         const runner = runners.get(slides[cur]);
-        if (runner) { runner.reset(); runner.start(); }
+        if (runner) {
+          if (slides[cur].dataset.animStatic !== undefined) runner.finish();
+          else { runner.reset(); runner.start(); }
+        }
         break;
       }
       case "f": case "F":
@@ -257,7 +260,7 @@
     cur = idx;
     const runner = runners.get(slides[cur]);
     if (runner) {
-      if (FIN) runner.finish();
+      if (FIN || slides[cur].dataset.animStatic !== undefined) runner.finish();
       else setTimeout(() => runner.start(), 450);
     }
     updatePage();
