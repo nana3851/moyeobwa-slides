@@ -351,14 +351,7 @@ table.tbl td:first-child { font-weight: 600; white-space: nowrap; }
 #s12 .map { flex: none; }
 
 /* S13 사업화 — 요금제 카드 */
-#s13 .s13-head { display: flex; align-items: flex-start; justify-content: space-between; }
 #s13 h1.title { margin-bottom: 26px; }
-#s13 .seg-toggle {
-  display: inline-flex; border: 1px solid var(--hairline); border-radius: 9999px;
-  background: var(--canvas); padding: 5px; margin-top: 6px;
-}
-#s13 .seg { font-size: 20px; padding: 8px 30px; border-radius: 9999px; color: var(--ink-muted); }
-#s13 .seg.on { background: var(--ink); color: #fff; font-weight: 600; }
 #s13 .plans-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; flex: 1; min-height: 0; }
 #s13 .plan-card {
   background: var(--canvas); border: 1px solid var(--hairline); border-radius: 18px;
@@ -410,10 +403,6 @@ table.tbl td:first-child { font-weight: 600; white-space: nowrap; }
 #a2 ul { list-style: none; display: flex; flex-direction: column; gap: 20px; }
 #a2 li { font-size: 25px; line-height: 1.55; }
 #a2 li b { color: var(--primary); }
-#a3 .qas { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1; min-height: 0; }
-#a3 .qa { padding: 26px 30px; }
-#a3 .qa h3 { font-size: 24px; color: var(--primary); margin-bottom: 10px; }
-#a3 .qa p { font-size: 21px; line-height: 1.5; }
 
 /* ============ 프린트 / 정적 모드 ============ */
 
